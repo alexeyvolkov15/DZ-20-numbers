@@ -11,6 +11,7 @@ class Program
         Console.WriteLine("Введите сторону квадрата");
         int sidesquare = int.Parse(Console.ReadLine());
         int area = side1 * side2;
-        Console.WriteLine("поместится " + area / sidesquare + " квадратов");
+        int count = (side1 / sidesquare) * (side2 / sidesquare);
+        Console.WriteLine("поместится "  + count + " квадратов");
     }
 }
